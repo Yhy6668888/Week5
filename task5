@@ -1,0 +1,10 @@
+public class task15 {
+    public static void main(String[] args) {
+        System.out.println("isDigit('a') is"+Character.isDigit('a'));
+        System.out.println("isDigit('b') is"+Character.isDigit('b'));
+        System.out.println("isLowerCase('c') is"+Character.isLowerCase('c'));
+        System.out.println("isUpperCase('d') is"+Character.isUpperCase('d'));
+        System.out.println("isLowerCase('e') is"+Character.isLowerCase('e'));
+        System.out.println("isUpperCase('f') is"+Character.isUpperCase('f'));
+    }
+}
