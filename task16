@@ -1,14 +1,17 @@
-public class task16 {
+public class FindIndex0fSubstring {
     public static void main(String[] args) {
-        System.out.printf("%-10s%-10s%-10s%-10s%-10s\n","Degrees","Radians");
-        int degrees = 30;
-// Display values for 30 degree
-        double radians = Math. toRadians(degrees);
-        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians,
-                Math.sin(radians), Math.cos(radians), Math.tan(radians));
-// Display values for 60 degree
-        degrees = 60;
-        radians = Math.toRadians(degrees);
-        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f",degrees,radians,
-                Math.sin(radians),Math.cos(radians),Math.tan(radians));
+        System.out.println("Welcome to Java".indexOf("W"));
+        System.out.println("Welcome to Java".indexOf("o"));
+        System.out.println("Welcome to Java".indexOf("o", 5));
+        System.out.println("Welcome to Java".indexOf("come"));
+        System.out.println("Welcome to Java".indexOf("Java", 5));
+        System.out.println("Welcome to Java".indexOf("java", 5));
+
+        System.out.println("Welcome to Java".lastIndexOf("W"));
+        System.out.println("Welcome to Java".lastIndexOf("o"));
+        System.out.println("Welcome to Java".lastIndexOf("o", 5));
+        System.out.println("Welcome to Java".lastIndexOf("come"));
+        System.out.println("Welcome to Java".lastIndexOf("Java", 5));
+        System.out.println("Welcome to Java".lastIndexOf("java", 5));
+    }
 }
