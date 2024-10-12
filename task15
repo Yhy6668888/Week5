@@ -1,9 +1,16 @@
-public class task25 {
+import java.util.Scanner;
+
+public class Week5Task15 {
     public static void main(String[] args) {
-        double amount = 12618.98;
-        double interestRate = 0.0013;
-        double interest = amount * interestRate;
-        System.out.println("Interest is $"+ interest);
-        System.out.printf("Interest with two decimal point is $%4.2f",interest);
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter two cities: ");
+        String city1 = input.nextLine();
+        String city2 = input.nextLine();
+        if (city1.compareTo(city2) < 0) {
+            System.out.println(city1 + " " + city2);
+        } else {
+            System.out.println(city2 + " " + city1);
+        }
+        input.close();
     }
 }
