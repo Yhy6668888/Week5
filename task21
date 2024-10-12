@@ -1,25 +1,11 @@
-import java.util.Scanner;
-
-public class Week5Task24 {
+public class FormatDemo {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a letter: ");
-        String letterStr = input.next();
-        if (letterStr.length() == 1) {
-            char letter = letterStr.charAt(0);
-            if (Character.isLetter(letter)) {
-                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' ||
-                    letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
-                    System.out.println(letter + " is a vowel");
-                } else {
-                    System.out.println(letter + " is a consonant");
-                }
-            } else {
-                System.out.println(letterStr + " is an invalid input");
-            }
-        } else {
-            System.out.println(letterStr + " is an invalid input");
-        }
-        input.close();
+        System.out.printf("%-10s%-10s%-10s%-10s%-10s\n", "Degrees", "Radians", "Sine", "Cosine", "Tangent");
+        int degrees = 30;
+        double radians = Math.toRadians(degrees);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians, Math.sin(radians), Math.cos(radians), Math.tan(radians));
+        degrees = 60;
+        radians = Math.toRadians(degrees);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians, Math.sin(radians), Math.cos(radians), Math.tan(radians));
     }
 }
