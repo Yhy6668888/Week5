@@ -1,0 +1,12 @@
+public class Week5Task23 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the length from the center of a pentagon to a vertex: ");
+        double length = input.nextDouble();
+        // 根据五边形面积公式：S = 1/4 * √(5(5 + 2√5)) * a^2，其中a为边长
+        double sideLength = 2 * length * Math.sin(Math.PI / 5);
+        double area = (1.0 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * sideLength * sideLength;
+        System.out.println("The area of the pentagon is " + area);
+        input.close();
+    }
+}
