@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class task20 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number");
+        String n = sc.nextLine();
+        char ch=n.charAt(0);
+        System.out.println("The character entered is"+ch);
+    }
+}
