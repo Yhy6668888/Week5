@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class task19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter three words  separated by space :");
+        String word1 = sc.nextLine();
+        String word2 = sc.nextLine();
+        String word3 = sc.nextLine();
+        System.out.println("word1: " + word1);
+        System.out.println("word2: " + word2);
+        System.out.println("word3: " + word3);
+    }
+}
